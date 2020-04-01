@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #3a4652;
+}
+
+@font-face { font-family: Roboto-Thin; src: url('/fonts/Roboto-Thin.ttf'); }
+@font-face { font-family: Roboto-Light; src: url('/fonts/Roboto-Light.ttf'); }
+@font-face { font-family: Roboto-Regular; src: url('/fonts/Roboto-Regular.ttf'); }
+@font-face { font-family: Roboto-Medium; src: url('/fonts/Roboto-Medium.ttf'); }
+
+@font-face { font-family: Comfortaa-Light; src: url('/fonts/Comfortaa-Light.ttf'); }
+@font-face { font-family: Comfortaa-Regular; src: url('/fonts/Comfortaa-Regular.ttf'); }
+@font-face { font-family: Comfortaa-Bold; src: url('/fonts/Comfortaa-Bold.ttf'); }
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 400px;
+  height: 700px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-top: 100px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-text {
+  font: 24px Roboto-Light;
+  margin: 50px 0 0 0;
+}
+
+.add-list-container {
+  display: flex;
+  justify-content: center;
+}
+
+.add-list-plus {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #aaa;
+  font: 16px Roboto-Medium;
+  color: #aaa;
+  margin: 50px 0 0 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.add-list-text {
+  font: 16px Roboto-Light;
+  margin: 15px 0 0 0;
+}
+
+.list-container {
+  margin: 100px 10px 0 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.list {
+  flex: 0 0 auto;
+  margin: 0 10px 0 0;
+  width: 200px;
+  height: 350px;
+  background-color: #44009e;
+  border-radius: 6px;
+  overflow-y: auto;
+}
+
+.list-title {
+  font: 21px Comfortaa-Regular;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 10px 0;
+}
+
+.list-title:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.list hr {
+  border: 1px solid #7c7c7c;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.tasks {
+  margin: 10px 0 0 0;
+}
+
+.tasks li{
+  font: 18px Comfortaa-Light;
+  color: #fff;
+  margin: 0 0 10px 0;
+  padding: 10px;
+}

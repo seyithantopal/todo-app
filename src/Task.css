@@ -1,0 +1,75 @@
+.title-text {
+    font: 38px Comfortaa-Light;
+    margin: 50px 0 0 20px;
+    font-weight: bold; 
+}
+
+.title-description {
+    font: 16px Roboto-Light;
+    margin: 5px 0 0 25px;
+    font-weight: bold;
+    color: dimgray;
+}
+
+.title-seperator {
+    margin: 10px 0 0 25px;           
+}
+
+.task-container {
+    display: flex;
+    justify-content: left;
+    height: 570px;
+    overflow-y: scroll;
+}
+
+.tasks-all {
+    margin: 0 0 0 0;
+    list-style-type: none;
+    width: 100%;
+}
+
+.tasks-all li{
+    font: 21px Comfortaa-Light;
+    color: #000 !important;
+    margin: 0 0 5px 0;
+    user-select: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+}
+
+.tasks-all .done {
+    text-decoration-line: line-through;
+    color:#3a4652;
+    background-color: #a0a0a0;
+    
+}
+
+.tasks-all label input {
+    display: none;
+}
+
+
+.tasks-all label span {
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    border: 1px solid grey;
+    display: inline-block;
+    position: relative;
+}
+
+.tasks-all [type=checkbox]:checked + span:before {
+    content: '\2714';
+    position: absolute;
+    top: -4px;
+    left: -1px;
+}
+
+.gotoApp {
+    width: 309px;
+    height: 45px;
+    margin-left: 25px;
+    margin-top: 25px;
+    font: 18px Comfortaa-Light;
+}
